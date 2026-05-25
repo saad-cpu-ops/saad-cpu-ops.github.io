@@ -141,8 +141,17 @@
   }
 
   @media print {
-    body { background: white; color: black; padding: 16px; }
-    .download-btn { display: none; }
+    * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+    body { background: #0d1117 !important; color: #c9d1d9 !important; padding: 16px; margin: 0; }
+    .download-btn { display: none !important; }
+    .container { max-width: 100% !important; }
+    .card, .project-card, .bounty-card, .skill-item, .lang-item { 
+      break-inside: avoid; 
+      page-break-inside: avoid;
+    }
+    .section { page-break-inside: avoid; }
+    a { color: inherit !important; }
+  }
   }
 </style>
 </head>
@@ -167,7 +176,7 @@
       <a href="https://github.com/saad-cpu-ops" target="_blank" class="contact-item"><span>⌥</span>github.com/saad-cpu-ops</a>
       <a href="https://medium.com/@Knox99" target="_blank" class="contact-item"><span>✍</span>medium.com/@Knox99</a>
       <a href="https://tryhackme.com/p/kn0x99" target="_blank" class="contact-item"><span>⚑</span>tryhackme.com/p/kn0x99</a>
-      <a href="https://x.com/cyber_ADHD01" target="_blank" class="contact-item">X<span>x.com/cyber_ADHD01</span>
+      <a href="https://x.com/cyber_ADHD01" target="_blank" class="contact-item"><span>x.com/cyber_ADHD01</span>
     </div>
 
     <div class="badges">
