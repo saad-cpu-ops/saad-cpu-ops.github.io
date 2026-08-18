@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -97,7 +100,7 @@
 
   /* Bug bounty special */
   .bounty-card { background: var(--bg-1); border: 1px solid var(--amber); border-radius: 6px; padding: 18px; margin-bottom: 12px; }
-  .bounty-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+  .bounty-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; flex-wrap: wrap; }
   .bounty-badge { font-size: 10px; padding: 3px 10px; border: 1px solid var(--amber); color: var(--amber); border-radius: 3px; }
   .bounty-title { font-size: 13px; font-weight: 500; color: var(--amber); }
   .bounty-steps { font-size: 11px; color: var(--text-1); line-height: 1.9; }
@@ -151,8 +154,7 @@
     }
     .section { page-break-inside: avoid; }
     a { color: inherit !important; }
-  }
-  }
+}
 </style>
 </head>
 <body>
@@ -170,13 +172,10 @@
 
     <div class="contact-grid">
       <span class="contact-item"><span>📍</span>Germany — Sachsen-Anhalt</span>
-      
-      
-      
       <a href="https://github.com/saad-cpu-ops" target="_blank" class="contact-item"><span>⌥</span>github.com/saad-cpu-ops</a>
-      <a href="https://medium.com/@Knox99" target="_blank" class="contact-item"><span>✍</span>medium.com/@Knox99</a>
-      <a href="https://tryhackme.com/p/kn0x99" target="_blank" class="contact-item"><span>⚑</span>tryhackme.com/p/kn0x99</a>
-      <a href="https://x.com/cyber_ADHD01" target="_blank" class="contact-item"><span>x.com/cyber_ADHD01</span>
+      <a href="https://medium.com/@S4AD_DXD" target="_blank" class="contact-item"><span>✍</span>medium.com/@S4AD_DXD</a>
+      <a href="https://tryhackme.com/p/S4AD.DXD" target="_blank" class="contact-item"><span>⚑</span>tryhackme.com/p/S4AD.DXD</a>
+      <a href="https://x.com/S4AD_DXD" target="_blank" class="contact-item"><span>x.com/S4AD_DXD</span></a>
     </div>
 
     <div class="badges">
@@ -193,8 +192,9 @@
     <div class="card">
       <div class="profile-text">
         <p>Ich bin ehrlich gesagt ein echter computer-geek — ich kann problemlos 12 Stunden am Stück vor dem Rechner sitzen, weil IT für mich keine Arbeit ist, sondern eine <span style="color:var(--cyan)">life-style</span>.</p>
-        <p>Als selbstausgebildeter IT-Supporter und Security Researcher habe ich ein bestätigtes und vergütetes Bug-Bounty-Finding vorzuweisen, ein eigenes Home Lab mit Windows Server, Active Directory und Linux aufgebaut und ein öffentliches GitHub-Projekt zur Simulation moderner Web-Infrastruktur entwickelt.</p>
+        <p>Als selbstausgebildeter IT-Supporter und Security Researcher habe ich mehrere bestätigte und vergütete Bug‑Bounty‑Funde vorzuweisen (u.a. auf <strong>mkez-dresden.de</strong>), ein eigenes Home Lab mit Windows Server, Active Directory und Linux aufgebaut und ein öffentliches GitHub-Projekt zur Simulation moderner Web-Infrastruktur entwickelt.</p>
         <p>Mein Ansatz ist einfach: <span style="color:var(--cyan)">Ich baue Systeme auf, um sie wirklich zu verstehen — und dann zu brechen.</span> Diese Methode hat mir ein tiefes Verständnis von IT-Infrastruktur, Netzwerken und Sicherheitsarchitektur gegeben, das weit über typische Kurse hinausgeht.</p>
+        <p>📌 <strong>Weitere aktuelle Lerninhalte und Projekte</strong> findest du auf meinen sozialen Profilen (GitHub, Medium, TryHackMe) – ich dokumentiere dort fortlaufend meine Fortschritte.</p>
       </div>
     </div>
   </div>
@@ -225,7 +225,7 @@
       </div>
       <div class="skill-item">
         <div class="skill-cat">&gt; SECURITY RESEARCH</div>
-        <div class="skill-val">IDOR/BOLA (bestätigt), Burp Suite, HTTP-Analyse, Cloudflare WAF, OWASP Top 10, Recon-Scripting</div>
+        <div class="skill-val">IDOR/BOLA (mehrfach bestätigt), Burp Suite, HTTP-Analyse, Cloudflare WAF, OWASP Top 10, Recon-Scripting</div>
       </div>
       <div class="skill-item">
         <div class="skill-cat">&gt; WEB &amp; ENTWICKLUNG</div>
@@ -235,12 +235,18 @@
         <div class="skill-cat">&gt; TOOLS &amp; PLATTFORMEN</div>
         <div class="skill-val">GitHub, Burp Suite, Microsoft Office, Virtualisierung (VMs), RAID-Grundlagen</div>
       </div>
+      <div class="skill-item">
+        <div class="skill-cat">&gt; SALESFORCE MANAGEMENT</div>
+        <div class="skill-val">Benutzer- und Berechtigungsverwaltung, Reports &amp; Dashboards, Prozessautomatisierung (Flows, Workflows), Sicherheitseinstellungen, Datenpflege</div>
+      </div>
     </div>
   </div>
 
-  <!-- Bug Bounty -->
+  <!-- Bug Bounty #1 -->
   <div class="section">
-    <div class="section-title">[ SECURITY_RESEARCH — BESTÄTIGTES_BUG_BOUNTY ]</div>
+    <div class="section-title">[ SECURITY_RESEARCH — BESTÄTIGTE_BUG_BOUNTIES ]</div>
+
+    <!-- Erste Bounty (bestehend) -->
     <div class="bounty-card">
       <div class="bounty-header">
         <span class="bounty-badge">🏆 BESTÄTIGT &amp; VERGÜTET</span>
@@ -260,6 +266,28 @@
       </ul>
       <div class="bounty-insight">
         &gt; Technischer Kern: Base64 ist keine Verschlüsselung. Das Backend validierte nicht gegen die Server-Session, sondern gegen Client-Input — klassisches BOLA. Cloudflare WAF konnte die Schwachstelle nicht erkennen, da der Request syntaktisch valide war.
+      </div>
+    </div>
+
+    <!-- Zweite Bounty (neu: mkez-dresden.de) -->
+    <div class="bounty-card">
+      <div class="bounty-header">
+        <span class="bounty-badge">🏆 WEITERE BESTÄTIGTE SCHWACHSTELLE</span>
+        <span class="bounty-title">mkez-dresden.de — Mehrere Sicherheitslücken identifiziert und gemeldet</span>
+      </div>
+      <div style="font-size:10px;color:var(--muted);margin-bottom:12px;">
+        Status: <span style="color:var(--green)">Bestätigt &amp; in Bearbeitung</span> &nbsp;·&nbsp;
+        Details: <a href="https://medium.com/@S4AD_DXD" style="color:var(--cyan);text-decoration:none;">medium.com/@S4AD_DXD</a>
+      </div>
+      <ul class="bounty-steps">
+        <li>Ziel: mkez-dresden.de — systematische Analyse mit Burp Suite und eigenen Recon-Skripten</li>
+        <li>Schwachstellen aufgedeckt: u.a. fehlerhafte Zugriffskontrollen, unsichere Direktobjektreferenzen und Informationslecks</li>
+        <li>Jede Lücke mit Proof-of-Concept dokumentiert und verantwortungsvoll an den Betreiber gemeldet</li>
+        <li>Erste Schwachstelle bereits bestätigt, weitere in der Klärung</li>
+        <li>Lessons Learned fließen in mein eigenes GitHub-Projekt zur sicheren Web-Infrastruktur ein</li>
+      </ul>
+      <div class="bounty-insight">
+        &gt; Diese Erfahrung zeigt, wie wichtig ein ganzheitlicher Blick auf die Anwendungsarchitektur ist – und bestätigt meinen kontinuierlichen Lernprozess im Bereich Security Research.
       </div>
     </div>
   </div>
